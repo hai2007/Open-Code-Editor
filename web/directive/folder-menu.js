@@ -68,7 +68,7 @@ let insertList = function (el, folderPath) {
 
                     console.log(fileTypeResult);
 
-                    fileTemplate += `<li path='${filePath}' owe-lang='${fileTypeResult.wscode}'  icon-lang='${fileTypeResult.lang}' name='${file}' type='file'>
+                    fileTemplate += `<li path='${filePath}' owe-lang='${fileTypeResult.owe}'  icon-lang='${fileTypeResult.lang}' name='${file}' type='file'>
                 <span>${file}</span>
             </li>`;
 

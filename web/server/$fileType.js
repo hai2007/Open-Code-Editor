@@ -18,12 +18,12 @@ export default function (filename) {
     // 获得结尾判断方法
     let endWiths = endWithsFactory(filename);
 
-    if (endWiths('.js')) return { lang: 'JavaScript', wscode: 'javascript' };
-    if (endWiths('.css')) return { lang: 'CSS', wscode: 'css' };
-    if (endWiths('.html', '.htm')) return { lang: 'HTML', wscode: 'html' };
-    if (endWiths('.json')) return { lang: 'JSON', wscode: 'json' };
-    if (endWiths('.scss', '.sass')) return { lang: 'SASS', wscode: 'css' };
-    if (endWiths('.png', '.jpg', '.jpeg', '.gif', '.ico')) return { lang: 'Image', wscode: 'image' };
+    if (endWiths('.js')) return { lang: 'JavaScript', owe: 'javascript' };
+    if (endWiths('.css')) return { lang: 'CSS', owe: 'css' };
+    if (endWiths('.html', '.htm')) return { lang: 'HTML', owe: 'html' };
+    if (endWiths('.json')) return { lang: 'JSON', owe: 'json' };
+    if (endWiths('.scss', '.sass')) return { lang: 'SASS', owe: 'css' };
+    if (endWiths('.png', '.jpg', '.jpeg', '.gif', '.ico')) return { lang: 'Image', owe: 'image' };
 
-    return { lang: 'Plain', wscode: 'normal' };
+    return { lang: 'Plain', owe: 'normal' };
 };

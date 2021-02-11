@@ -63,7 +63,7 @@
                 let flag = 1;
 
                 while (true) {
-                    if (document.getElementsByName("oce@wscode:未命名-" + flag).length <= 0) {
+                    if (document.getElementsByName("oce@owe:未命名-" + flag).length <= 0) {
                         break;
                     }
                     flag += 1;

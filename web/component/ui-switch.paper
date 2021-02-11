@@ -41,45 +41,48 @@
     };
 </script>
 <style>
-    ul.view {
+    [quickpaper] {
         height: 100%;
         position: relative;
         padding-top: .2rem;
 
-        &>li {
-            display: inline-block;
-            width: 100%;
-            height: .5rem;
-            background-image: url(../assets/images/switch.png);
-            cursor: pointer;
+        ul.view {
 
-            &:hover {
-                background-image: url(../assets/images/switch@hover.png);
-            }
+            &>li {
+                display: inline-block;
+                width: 100%;
+                height: .5rem;
+                background-image: url(../assets/images/switch.png);
+                cursor: pointer;
 
-            &.active {
-                border-left: 2px solid #9d91af;
-                background-color: #cecbd238;
-                background-image: url(../assets/images/switch@hover.png);
-            }
+                &:hover {
+                    background-image: url(../assets/images/switch@hover.png);
+                }
 
-            &.folder {
-                background-position-y: 0px;
-            }
+                &.active {
+                    border-left: 2px solid #9d91af;
+                    background-color: #cecbd238;
+                    background-image: url(../assets/images/switch@hover.png);
+                }
 
-            &.search {
-                background-position-y: -63px;
-            }
+                &.folder {
+                    background-position-y: 0px;
+                }
 
-            &.plug {
-                background-position-y: -134px;
-            }
+                &.search {
+                    background-position-y: -63px;
+                }
 
-            &.set {
-                background-position-y: -196px;
-                position: absolute;
-                left: 0;
-                bottom: 0;
+                &.plug {
+                    background-position-y: -134px;
+                }
+
+                &.set {
+                    background-position-y: -196px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
             }
         }
     }

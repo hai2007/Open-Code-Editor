@@ -49,7 +49,7 @@
                 });
 
                 // 文本改动更新提示
-                this.wscode.updated(() => {
+                this.owe.updated(() => {
                     image2D(document.getElementsByName(this.info.id)[0]).addClass('modify');
                 });
 
@@ -60,7 +60,7 @@
 
                     let doSave = filepath => {
                         // 写入文本
-                        fs.writeFileSync(filepath, this.wscode.valueOf(), {
+                        fs.writeFileSync(filepath, this.owe.valueOf(), {
                             encoding: 'utf8'
                         });
 
@@ -71,7 +71,7 @@
                     // 只有当前的页面是活动的，且被修改了才需要保存
                     if (navLi.hasClass('active') && navLi.hasClass('modify')) {
 
-                        let filepath = this.info.id.replace(/^oce@wscode:/, '');
+                        let filepath = this.info.id.replace(/^oce@owe:/, '');
 
                         // 首先判断是否是新建的，需要选择路径
                         if (filepath == '未命名-1') {

@@ -2,12 +2,10 @@
     @author 你好2007
     2020年6月11日于大同
 -->
-<template>
-    <li :lang="info.type" :name="info.id" @click='changeShow()'>
-        {{info.name}}
-        <em @click.stop='closePage()'>X</em>
-        <span>●</span>
-    </li>
+<template :lang="info.type" :name="info.id" @click='changeShow()'>
+    {{info.name}}
+    <em @click.stop='closePage()'>X</em>
+    <span>●</span>
 </template>
 <script>
     export default {
@@ -27,7 +25,7 @@
     };
 </script>
 <style>
-    li {
+    [quickpaper] {
         display: inline-block;
         padding: 0 .3rem;
         position: relative;

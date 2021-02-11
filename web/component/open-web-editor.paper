@@ -4,7 +4,7 @@
 -->
 <template>
     <div>
-        <ul class="nav" id='nav'></ul>
+        <div class="nav" id='nav'></div>
         <ul class="owe" id='owe'>
             <li class='welcome'>
                 <div>
@@ -72,8 +72,8 @@
                 page.navQuickPaper.info = page.data;
 
                 // 追加主体内容
-                let elWscode = image2D(`<div />`).appendTo('#owe');
-                page.component.el = elWscode[0];
+                let elOwe = image2D(`<div />`).appendTo('#owe');
+                page.component.el = elOwe[0];
                 page.component.el._nodeName = 'Quick-Paper-COMPONENT';
 
                 page.oweQuickPaper = new QuickPaper(page.component);
@@ -153,7 +153,7 @@
 </script>
 <style>
     div {
-        &>ul {
+        &>* {
             &.nav {
                 line-height: .34rem;
                 height: .34rem;
@@ -165,7 +165,7 @@
                 white-space: nowrap;
             }
 
-            &.wscode {
+            &.owe {
                 position: relative;
                 height: calc(100% - .34rem);
 
