@@ -11,7 +11,7 @@
             <input type="button" value="打开文件夹" @click='openFolder()'>
             <p>
                 或者你可以创建一个文件进行编辑，更多细节请进入我们的
-                <a href="javascript:void(0)" @click.stop='openGithubLink("yelloxing/Open-Code-Editor/issues")'>issue</a>
+                <a href="javascript:void(0)" @click.stop='openGithubLink("hai2007/Open-Code-Editor/issues")'>issue</a>
                 进行讨论交流，也欢迎你加入我们。
             </p>
             <input type="button" value="创建一个文件" @click='newBlankFile()'>

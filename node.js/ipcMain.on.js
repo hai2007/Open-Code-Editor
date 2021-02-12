@@ -17,7 +17,7 @@ module.exports = function (win) {
     ipcMain.on('unmaximize', () => { win.unmaximize(); });
 
     // 退出系统
-    ipcMain.on('quit', () => { app.quit(); });
+    ipcMain.on('quit', () => { app.exit(); });
 
     /**
      * 监听来自原生窗口操作

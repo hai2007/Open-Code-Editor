@@ -21,7 +21,7 @@ import './assets/styles/mac.scss';
 import './directive/index';
 
 // 简单的传递信息给node.js的全局方法
-QuickPaper.prototype.emit = (event, ...params) => nodeRequire('electron').ipcRenderer.send(event, ...params);
+QuickPaper.prototype.emit = (event) => nodeRequire('electron').ipcRenderer.send(event);
 
 // 引入全局通知机制
 import event from './plug/@event.js'; QuickPaper.use(event);

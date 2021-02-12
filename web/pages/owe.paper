@@ -26,7 +26,7 @@
 
                 let lang = this.info.type;
 
-                this.owe = new OpenWebEditor({
+                let config = {
                     el: document.getElementsByName(this.info.id)[1],
                     content: this.info.content,
                     color: {
@@ -42,11 +42,45 @@
                         cursor: "#ff0000",
                         /*选择背景*/
                         select: "#6c6cf1"
-                    },
+                    }
 
-                    // 着色方法
-                    // todo
-                });
+                };
+
+                let css_shader = {
+                    "annotation": "#6a9955",/*注释颜色*/
+                    "insign": "#555",/*符号颜色*/
+                    "selector": "#1e50b3",/*选择器*/
+                    "attrKey": "#1e83b1",/*属性名称颜色*/
+                    "attrValue": "#ac4c1e"/*属性值颜色*/
+                };
+
+                let js_shader = {
+                    "text": "#000000",/*文本颜色*/
+                    "annotation": "#6a9955",/*注释颜色*/
+                    "insign": "#555",/*符号颜色*/
+                    "key": "#ff0000",/*关键字颜色*/
+                    "string": "#ac4c1e",/*字符串颜色*/
+                    "funName": "#1e50b3",/*函数名称颜色*/
+                    "execName": "#1e83b1"/*执行方法颜色*/
+                };
+
+                let html_shader = {
+                    "text": "#000000",/*文本颜色*/
+                    "annotation": "#6a9955",/*注释颜色*/
+                    "insign": "#555",/*符号颜色*/
+                    "node": "#1e50b3",/*结点颜色*/
+                    "attrKey": "#1e83b1",/*属性名称颜色*/
+                    "attrValue": "#ac4c1e",/*属性值颜色*/
+                    "css": css_shader,
+                    "javascript": js_shader
+                };
+
+                // 着色方法
+                if (lang == 'html') config.shader = ['html', html_shader];
+                else if (lang == 'css') config.shader = ['css', css_shader];
+                else if (lang == 'javascript' || lang=='json') config.shader = ['javascript', js_shader];
+
+                this.owe = new OpenWebEditor(config);
 
                 // 文本改动更新提示
                 this.owe.updated(() => {
