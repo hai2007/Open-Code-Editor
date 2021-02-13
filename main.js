@@ -3,7 +3,6 @@ const { app, BrowserWindow } = require('electron');
 function createWindow() {
     // 创建浏览器窗口
     let win = new BrowserWindow({
-        icon: "./web/assets/images/logo.png",
         width: 900,
         height: 600,
         minWidth: 700,
