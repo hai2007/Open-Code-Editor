@@ -114,8 +114,7 @@
   "dependencies": {
     "@hai2007/tool": "^0.6.2",
     "@hai2007/style": "^0.2.3",
-    "quick-paper": "^0.2.5",
-    "image2d": "^1.10.6",
-    "open-web-editor": "^0.3.0"
+    "quick-paper": "^0.3.0",
+    "image2d": "^1.10.6"
   }
 }

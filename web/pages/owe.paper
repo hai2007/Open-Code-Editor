@@ -7,7 +7,6 @@
 </template>
 <script>
 
-    import OpenWebEditor from 'open-web-editor';
     import image2D from 'image2d';
 
     const fs = nodeRequire('fs');
@@ -80,7 +79,7 @@
                 else if (lang == 'css') config.shader = ['css', css_shader];
                 else if (lang == 'javascript' || lang=='json') config.shader = ['javascript', js_shader];
 
-                this.owe = new OpenWebEditor(config);
+                this.owe = new this.__OpenWebEditor(config);
 
                 // 文本改动更新提示
                 this.owe.updated(() => {
