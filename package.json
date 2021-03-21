@@ -94,7 +94,6 @@
     "autoprefixer": "^9.7.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.0.0",
-    "babel-plugin-dynamic-import-webpack": "^1.1.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.1",
     "@hai2007/nodejs": "^1.0.0",
@@ -112,9 +111,9 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@hai2007/tool": "^0.6.2",
+    "@hai2007/tool": "^0.6.3",
     "@hai2007/style": "^0.2.3",
-    "quick-paper": "^0.3.0",
-    "image2d": "^1.10.6"
+    "quick-paper": "^0.4.1",
+    "image2d": "^1.13.1"
   }
 }
